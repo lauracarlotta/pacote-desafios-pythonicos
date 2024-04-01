@@ -14,7 +14,6 @@ for menor que 2, retorne uma string vazia.
 def both_ends(s):
     # +++ SUA SOLUÇÃO +++
     # SOLUTION 4 - COM WHILE
-    # SOLUTION 4 - COM WHILE
     string_received = s
     result = ''
     if len(string_received) < 2:
