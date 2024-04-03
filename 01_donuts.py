@@ -15,19 +15,40 @@ ao invés do contador.
 Exemplo: donuts(5) retorna 'Number of donuts: 5'
 e donuts(23) retorna 'Number of donuts: many'
 """
-# todo !r - formatação de string PESQUISAR
-# ✅ todo renomear os parametros da função test
+import math
+
+# ✅ todo !r - formatação de string PESQUISAR
+        # => Mais declarativo. Ex:
+# PYTHON3
+print('foo {}'.format('baa'))
+# foo baa
+print('foo {!r}'.format('baa'))
+#foo 'baa'
+
+# PYTHON2 (testado)
+print('The value of PI is approximately {}.'.format(math.pi))
+# The value of PI is approximately 3.14159265359.
+print('The value of PI is approximately {!r}.'.format(math.pi))
+# The value of PI is approximately 3.141592653589793.
+
+
 # ✅ todo explicar if __name__ == '__main__'
         # =>Esse teste só será executado se esse arquivo for executado
+# ✅ todo renomear os parametros da função test
 
 def donuts(count):
-    if count > 0 and count < 10:
-        message = f'Number of donuts: {count}'
+    # SOLUTION 2
+    return f'Number of donuts: {count}' if count > 0 and count < 10 else 'Number of donuts: many'
 
+
+    # SOLUTION 1
+    """if count > 0 and count < 10:
+        message = f'Number of donuts: {count}'
+    
     else:
         message = 'Number of donuts: many'
-
-    return message
+    
+    return message"""
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
