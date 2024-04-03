@@ -13,22 +13,30 @@ Dica: s.replace(stra, strb) retorna uma versão da string s
 onde todas as instancias de stra foram substituidas por strb.
 """
 
-# TODO usar o método replace
-# TODO usar outros métodos do python
-# TODO escrever em apenas uma linha
+# ✅ TODO usar o método replace
+# ✅ TODO usar outros métodos do python
+# ✅ TODO escrever em apenas uma linha
+
+# 1 - substitui e substitui de novo
+# 2 - quantas ocorrencias aparecem daquela letra
+# 3 - replace a partir do indice 1  <================
+
 # ==> Eliminar repetições, legibilidade, nomear variáveis com nomes semanticos e pequenos
 
 def fix_start(s):
-    # 1 - substitui e substitui de novo
-    # 2 - quantas ocorrencias aparecem daquela letra
-    # 3 - replace a partir do indice 1  <================
     # +++ SUA SOLUÇÃO +++
-
     # SOLUTION 3
-    # TODO - não consegui usar outro metodo
-    """value = s
-    value = s.replace(s[0], '*', value.find(value.index(s[0]), 1, len(s)))
-    return value"""
+
+    letter = s[0]
+    new_word = ''
+    for cont in range(len(s)):
+        if s.find(letter, cont) and not cont == 0:
+            new_word += s[cont].replace(letter, '*')
+        else:
+            new_word += s[cont]
+        cont += 1
+    return new_word
+
 
     # SOLUTION 2
     """new_string = ''
