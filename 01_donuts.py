@@ -5,16 +5,7 @@
 # ✅ fazer o exercício com apenas um return
 # ✅ É possível simplificar o código? (RENOMEEI OS PARÂMETROS) => sERÁ POSSÍVEL SIMPLIFICÁ-LA MAIS TARDE?
 
-"""
-01. donuts
 
-Dado um contador inteiro do numero de donuts, retorne uma string
-com o formato 'Number of donuts: <count>' onde <count> é o numero
-recebido. Entretanto, se o contador for 10 ou mais, use a palavra 'many'
-ao invés do contador.
-Exemplo: donuts(5) retorna 'Number of donuts: 5'
-e donuts(23) retorna 'Number of donuts: many'
-"""
 import math
 
 # ✅ todo !r - formatação de string PESQUISAR
@@ -36,6 +27,19 @@ print('The value of PI is approximately {!r}.'.format(math.pi))
         # =>Esse teste só será executado se esse arquivo for executado
 # ✅ todo renomear os parametros da função test
 
+
+"""
+01. donuts
+
+Dado um contador inteiro do numero de donuts, retorne uma string
+com o formato 'Number of donuts: <count>' onde <count> é o numero
+recebido. Entretanto, se o contador for 10 ou mais, use a palavra 'many'
+ao invés do contador.
+Exemplo: donuts(5) retorna 'Number of donuts: 5'
+e donuts(23) retorna 'Number of donuts: many'
+"""
+
+
 def donuts(count):
     # SOLUTION 2
     return f'Number of donuts: {count}' if count > 0 and count < 10 else 'Number of donuts: many'
@@ -52,7 +56,6 @@ def donuts(count):
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
-
 def test(function, input, expected):
     """
     Executa a função f com o parâmetro in_ e compara o resultado com expected.
