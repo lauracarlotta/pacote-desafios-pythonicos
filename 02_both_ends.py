@@ -13,8 +13,24 @@ for menor que 2, retorne uma string vazia.
 
 def both_ends(s):
     # +++ SUA SOLUÇÃO +++
+
+    # Refatoração de código
+    if len(s) <= 2:
+        return ''
+
+    new_string = []
+    cont = 0
+    while not len(new_string) == 4:
+        new_string.insert(cont, s[cont])
+        new_string.insert(cont + 1, s[-(cont + 1)])
+        cont += 1
+    result = ''.join(new_string)
+
+    return result
+
+
     # SOLUTION 4 - COM WHILE
-    result = []
+    """result = []
     if len(s) > 2:
         # TODO 1 while só
         cont = 0
@@ -26,7 +42,7 @@ def both_ends(s):
 
     else:
         new_string = ''
-    return new_string
+    return new_string"""
 
     # SOLUTION 3
     """return '' if len(s) < 2 else s[slice(2)] + s[slice(-2, len(s))]"""
