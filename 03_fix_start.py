@@ -1,3 +1,12 @@
+# ✅ TODO usar o método replace
+# ✅ TODO usar outros métodos do python
+# ✅ TODO escrever em apenas uma linha
+
+# 1 - substitui e substitui de novo
+# 2 - quantas ocorrencias aparecem daquela letra
+# 3 - replace a partir do indice 1  <================
+
+# ==> Eliminar repetições, legibilidade, nomear variáveis com nomes semanticos e pequenos
 """
 03. fix_start
 
@@ -13,15 +22,6 @@ Dica: s.replace(stra, strb) retorna uma versão da string s
 onde todas as instancias de stra foram substituidas por strb.
 """
 
-# ✅ TODO usar o método replace
-# ✅ TODO usar outros métodos do python
-# ✅ TODO escrever em apenas uma linha
-
-# 1 - substitui e substitui de novo
-# 2 - quantas ocorrencias aparecem daquela letra
-# 3 - replace a partir do indice 1  <================
-
-# ==> Eliminar repetições, legibilidade, nomear variáveis com nomes semanticos e pequenos
 
 def fix_start(s):
     # +++ SUA SOLUÇÃO +++
